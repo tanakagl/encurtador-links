@@ -14,8 +14,13 @@
 }
 
 .logo h1 {
-    font-size: 52px;
+    font-size: 48px;
     color: white;
+}
+
+.logo h2 {
+    font-size: 22px;
+    color: rgb(255, 255, 255, 0.7);
 }
 
 .logo span{
@@ -85,6 +90,16 @@
     transform: scale(1.05);
 }
 
+footer {
+    color: rgb(255, 255, 255, 0.7);
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    bottom: 5px;
+}
+
 @media (max-width:615px){
     .logo img{
         width: 150px;
@@ -98,7 +113,8 @@
         width: 80%;
     }
 
-    .logo span{
+    .logo span {
         font-size: 16px;
     }
+
 }

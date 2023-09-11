@@ -6,10 +6,16 @@
 .links-header {
     display: flex;
     flex-direction: row;
+
 }
 
 .links-header svg{
     margin-right: 14px;
+    transition: transform 0.4s;
+}
+
+.links-header svg:hover{
+    transform: scale(1.2)
 }
 
 .links-header h1 {
@@ -56,6 +62,22 @@
 .trash {
     border: 0;
     background-color: transparent;
+}
+
+.empty-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 24px;
+    color: white;
+    animation: sadAnimation 1s;
+}
+
+@keyframes sadAnimation {
+    from{
+      transform: translateY(90px);  
+    }to{
+      transform: translateY(0px);
+    }
 }
 
 
